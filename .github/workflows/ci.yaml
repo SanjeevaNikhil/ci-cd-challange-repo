@@ -4,7 +4,7 @@ name: CI
 on:
   # Triggers the workflow on  pull request events but only for the "main" branch
   pull_request:
-    branches: [ "main" ]
+    branches: [ "dev" ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,5 +37,3 @@ jobs:
 
       - name: build
         run: npm run build
-
-
